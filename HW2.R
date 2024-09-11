@@ -28,8 +28,7 @@ spx_plot2 <- spx_plot1 +
   labs(title = "S&P 500 - Closing Price over the Last Month",
        x = "Date", 
        y = "Price") +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1),
-        plot.title = element_text(hjust=0.5))
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 spx_plot2
 
@@ -41,8 +40,7 @@ bookplot <- ggplot(bookdata, aes(x = Category, y = Price.Starting.With...., colo
   geom_point(alpha=0.40)+
   labs(title = "The Price of Fiction Books by Genre and Season", x="Genre", y ="Price($)")+
   theme_minimal()+
-  theme(axis.text.x = element_text(angle = 30, hjust = 1),
-        plot.title = element_text(hjust = 0.5))
+  theme(axis.text.x = element_text(angle = 30, hjust = 1))
 
 bookplot
 
