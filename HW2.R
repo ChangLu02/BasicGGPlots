@@ -40,7 +40,7 @@ spx_plot2
 ### Exercise 2
 bookdata <- read.csv("BookGenres.csv")
 colnames(bookdata)
-bookplot <- ggplot(bookdata, aes(x = Category, y = Price.Starting.With...., color = Season))+
+bookplot <- ggplot(bookdata, aes(x = Category, y = Price, color = Season))+
   geom_point(alpha=0.40)+
   labs(title = "The Price of Fiction Books by Genre and Season", x="Genre", y ="Price($)")+
   theme_minimal()+
