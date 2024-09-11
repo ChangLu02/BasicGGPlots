@@ -22,8 +22,8 @@ spx_data <- read.csv("SPX-1Month.csv")
 head(spx_data)
 colnames(spx_data)
 spx_plot1<-ggplot(spx_data, aes(x = Date, y = Close.Last, group =1)) +
-  geom_line() +
-  geom_point()
+  geom_point()+
+  geom_line() 
 
 spx_plot1
 
@@ -42,7 +42,7 @@ bookdata <- read.csv("BookGenres.csv")
 colnames(bookdata)
 bookplot <- ggplot(bookdata, aes(x = Category, y = Price, color = Season))+
   geom_point(alpha=0.40)+
-  labs(title = "The Price of Fiction Books by Genre and Season", x="Genre", y ="Price($)")+
+  labs(title = "The Price of Fiction Books by Genre and Season", x="Genre", y ="Price ($)")+
   theme_minimal()+
   theme(axis.text.x = element_text(angle = 30, hjust = 1))
 
@@ -53,7 +53,7 @@ squirreldata <- read.csv("squirrel.csv")
 colnames(squirreldata)
 squirrelPlot<- ggplot(squirreldata, aes(x = Activities, fill =Interactions.with.Humans))+
   geom_bar(position = "dodge")+
-  labs(title = "Squrriel Behavior in NYC parks", x="Squrriel's Acticity during Observation", y = "Count")+
+  labs(title = "Squrriel Behavior in NYC Parks", x="Squrriel's Activity during Observation", y = "Count")+
   theme_grey()
   
 
