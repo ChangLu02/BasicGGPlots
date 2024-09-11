@@ -16,8 +16,7 @@ library(stringr)
 ### Exercise 1
 
 spx_data <- read.csv("SPX-1Month.csv")
-install.packages('ggplot2')
-library(ggplot2)
+
 
 
 head(spx_data)
