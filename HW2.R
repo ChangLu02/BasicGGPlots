@@ -5,9 +5,14 @@
 
 #Put your code in this file. Make sure you assign the relevant values to the correct variable names, which are given below. 
 #Uncomment the variables as you assign your final values/functions/results to them.
-install.packages('tidyverse')
-library(tidyverse)# This loads the packages necessary to run your plots. Do not delete or comment this out.
+#install.packages('tidyverse')
+#library(tidyverse)# This loads the packages necessary to run your plots. Do not delete or comment this out.
 
+library(dplyr)
+library(tidyr)
+library(tibble)
+library(ggplot2)
+library(stringr)
 ### Exercise 1
 
 spx_data <- read.csv("SPX-1Month.csv")
