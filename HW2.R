@@ -28,9 +28,9 @@ spx_plot1<-ggplot(spx_data, aes(x = Date, y = Close.Last, group =1)) +
 spx_plot1
 
 
-spx_plot2 <- ggplot(spx_data, aes(x = Date, y = Close.Last, group =1)) +
+spx_plot2 <- ggplot(spx_data, aes(x = Date, y = Close.Last)) +
   geom_point()+
-  geom_line()  +
+  geom_line(group =1)  +
   labs(title = "S&P 500 - Closing Price over the Last Month",
        x = "Date", 
        y = "Price") +
