@@ -80,7 +80,7 @@ logBigMac<-ggplot(bigmacdata,aes(x=log(as.numeric(GDP.Per.Capita)), y= dollar_pr
   geom_point()+
   geom_smooth(method = 'loess', se = TRUE, color="blue")+
   labs(title = "Countries' GDP Per Capita compared to their Big Mac Index",
-       x = "Log of Dollar GDP per Capita",
+       x = "Log of Dollar GDP Per Capita",
        y = "Dollar Price of a Big Mac")+
   theme_grey()
 logBigMac
