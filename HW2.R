@@ -76,7 +76,7 @@ bigMac<-ggplot(bigmacdata,aes(x=GDP.Per.Capita, y= dollar_price)) +
         theme_grey()
        
 bigMac      
-logBigMac<-ggplot(bigmacdata,aes(x=log(GDP.Per.Capita), y= dollar_price)) +
+logBigMac<-ggplot(bigmacdata,aes(x=log(as.numeric(GDP.Per.Capita)), y= dollar_price)) +
   geom_point()+
   geom_smooth(method = 'loess', se = TRUE, color="blue")+
   labs(title = "Countries' GDP Per Capita compared to their Big Mac Index",
