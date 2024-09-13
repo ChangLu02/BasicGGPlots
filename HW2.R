@@ -55,7 +55,7 @@ squirreldata <- read.csv("squirrel.csv")
 colnames(squirreldata)
 squirrelPlot<- ggplot(squirreldata, aes(x = Activities, fill =Interactions.with.Humans))+
   geom_bar(position = "dodge")+
-  labs(title = "Squirrel Behavior in NYC Parks", x="Squirrel's Activity during Observation", y = "Count")+
+  labs(title = "Squirrel Behavior in NYC Parks", x="Squirrel's Activity during Observation", y = "Count", fill = "Interactions with Humans")+
   theme_grey()
   
 
